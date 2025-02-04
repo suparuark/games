@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  RewriteRule ^question.html question.inc.php [L]
+  RewriteRule ^quest/(.*).html question.inc.php?y=quest&id=$1 [L]
+
+</IfModule>
+AddType application/x-javascript .js
+AddType text/css .css
