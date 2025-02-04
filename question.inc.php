@@ -1,8 +1,8 @@
 <?php
-  $link = mysqli_connect("localhost", "phoonzon", "suparuark1983", "phoonzon_muang");
+  $link = mysqli_connect("localhost", "root", "12345678", "question");
   mysqli_set_charset($link, "utf8");
   define("index", "https://games.phoonzone.com/");
-  include "../include/function.inc.php";
+  include "function.inc.php";
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
